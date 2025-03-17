@@ -1,20 +1,37 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package ado2_interface;
 
-/**
- *
- * @author Marcus Machine
- */
+package ado2_interface;
+import listasimples.*;
+
+//@author Marcus Machine
+
 public class Principal_ADO2_Interface {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ListaSimples ls = new ListaSimples();
+        //ls.inserePrimeiroNo(15);
+        //ls.insereFinalLista(12);
+        //ls.insereInicioLista(60);
+        //ls.insereMeioLista(100, 1);
+        
+        ls.insere(12);
+        ls.insere(16);
+        
+        System.out.println(ls.tamanhoLista());
+        System.out.println(ls.print());
+        
+             
+        ls.removePrimeiroLista();
+        System.out.println(ls.print());
+       
+        ls.removeMeioLista(3);
+        System.out.println(ls.print());
+        
+        ls.removeUltimoLista();
+        System.out.println(ls.print());
+        
+        ls.removeUnicoLista();
+        System.out.println(ls.print());
     }
     
 }
