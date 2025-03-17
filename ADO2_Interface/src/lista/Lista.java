@@ -15,6 +15,7 @@ public interface Lista {
     
     public boolean listaVazia(); //v
     
+    
     public int tamanhoLista(); //v
     
 }
